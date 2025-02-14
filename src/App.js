@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./App.css";
 
 function App() {
   const form = useRef();
+  const [open, setOpen] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,10 +30,22 @@ function App() {
 
   const handleMouseEnter = () => {
     document.querySelector(".card").style.top = "-90px";
+    setOpen(true);
   };
 
   const handleMouseLeave = () => {
     document.querySelector(".card").style.top = "0";
+    setOpen(false);
+  };
+
+  const handleClick = () => {
+    if (open) {
+      document.querySelector(".card").style.top = "0";
+      setOpen(false);
+    } else {
+      document.querySelector(".card").style.top = "-90px";
+      setOpen(true);
+    }
   };
 
   return (
@@ -42,6 +55,7 @@ function App() {
           className="valentines"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
         >
           <div className="envelope"></div>
           <div className="front"></div>
