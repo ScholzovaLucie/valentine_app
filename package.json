@@ -2,7 +2,7 @@
   "name": "valentine_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ScholzovaLucie/valentine_app",
+  "homepage": "https://scholzovalucie.github.io/valentine_app/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "cra-template": "1.2.0",
