@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ScholzovaLucie/valentine_app/static/css/main.1cdb0b19.css",
+    "main.js": "/ScholzovaLucie/valentine_app/static/js/main.a38a3bb5.js",
+    "index.html": "/ScholzovaLucie/valentine_app/index.html",
+    "main.1cdb0b19.css.map": "/ScholzovaLucie/valentine_app/static/css/main.1cdb0b19.css.map",
+    "main.a38a3bb5.js.map": "/ScholzovaLucie/valentine_app/static/js/main.a38a3bb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cdb0b19.css",
+    "static/js/main.a38a3bb5.js"
+  ]
+}
